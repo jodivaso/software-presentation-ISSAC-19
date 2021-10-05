@@ -26,6 +26,6 @@ COPY kenzo.py sage/local/lib/python2.7/site-packages/sage/interfaces/
 # RUN apt-get install -y make 
 # RUN sage -br
 WORKDIR ${HOME}
-user 1001
+#user 1001
 
 
