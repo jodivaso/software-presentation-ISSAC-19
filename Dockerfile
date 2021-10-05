@@ -6,7 +6,7 @@ FROM sagemath/sagemath:8.8
 COPY --chown=sage:sage . ${HOME}
 
 RUN sage -pip install jupyterlab
-RUN sage -pip install RISE
+RUN sage -pip install 'RISE>=5.5.0,<5.7.0'
 ARG SSL_KEYSTORE_PASSWORD
 USER root
 RUN apt-get update
